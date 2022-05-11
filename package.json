@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:chrome": "cypress run -b chrome",
+    "cypress:firefox": "cypress run -b firefox",
+    "fulltest": "cypress run --spec cypress/integration/*"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  }
+}
